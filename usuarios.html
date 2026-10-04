@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuários - Administração</title>
+</head>
+<body>
+    <header>
+        <h1>Área de Administração</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Voltar para a Página Inicial</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="tema.html">Cadastro de Temas</a></li>
+            <li><a href="usuarios.html">Cadastro de Usuários</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Gerenciamento de Usuários</h2>
+
+        <h3>Cadastrar / Editar Usuário</h3>
+        <form action="#" method="POST">
+            <div>
+                <label for="nome_usuario">Nome Completo:</label>
+                <input type="text" id="nome_usuario" name="nome_usuario" required>
+            </div>
+            <br>
+            <div>
+                <label for="email_usuario">E-mail:</label>
+                <input type="email" id="email_usuario" name="email_usuario" required>
+            </div>
+            <br>
+            <button type="submit">Salvar</button>
+            <button type="reset">Limpar</button>
+        </form>
+
+        <br>
+
+        <h3>Usuários Cadastrados</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome Completo</th>
+                    <th>E-mail</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Diego Frota</td>
+                    <td>diego@exemplo.com</td>
+                    <td>
+                        <button type="button">Editar</button>
+                        <button type="button">Apagar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maria Silva</td>
+                    <td>maria@exemplo.com</td>
+                    <td>
+                        <button type="button">Editar</button>
+                        <button type="button">Apagar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <br><hr>
+
+    <footer>
+        <p>Autor: Diego Frota - <a href="sobre.html">Sobre o autor</a></p>
+    </footer>
+</body>
+</html>
